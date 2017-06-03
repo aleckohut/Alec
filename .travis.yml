@@ -6,6 +6,7 @@ script:
 - bundle exec jekyll build
 - git config --global user.email "travis"
 - git config --global user.name "travis"
+- git add .
 - git commit -a -m "auto commit from travis build"
 - git push "https://$GHREF@github.com/aleckohut/Alec" master:master > /dev/null 2>&1
 branches:
