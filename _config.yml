@@ -27,7 +27,6 @@ twitter_username: turnoutblue
 markdown: kramdown
 theme: minima
 gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
