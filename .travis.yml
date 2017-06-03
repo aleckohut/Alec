@@ -6,6 +6,8 @@ script:
   - set -e # halt script on error
   - bundle exec jekyll build
     #- bundle exec htmlproofer ./_site
+  - git config --global user.email "travis"
+  - git config --global user.name "travis"
   - git commit -a
   - git push origin master
 
