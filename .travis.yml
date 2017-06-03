@@ -1,22 +1,19 @@
 language: ruby
 rvm:
 - 2.3.3
-
-script: 
-  - set -e # halt script on error
-  - bundle exec jekyll build
-    #- bundle exec htmlproofer ./_site
-  - git config --global user.email "travis"
-  - git config --global user.name "travis"
-  - git commit -a -m "auto commit from travis build"
-  - git push origin master
-
+script:
+- set -e
+- bundle exec jekyll build
+- git config --global user.email "travis"
+- git config --global user.name "travis"
+- git commit -a -m "auto commit from travis build"
+- git push "https://$GHREF@github.com/aleckohut/Alec" master:master > /dev/null 2>&1
 branches:
   only:
   - master
-
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
-sudo: false # route your build to the container-based infrastructure for a faster build
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: B3XdjDyuureG2TDtaZjwUhTymcD4zM0dwc7tv006r7Hw00qOE9bPSpc+LZpT4anDXB8w3cjcaz0PGKE1+JHcKpX+X8jQO1NqTzz8vUgZKIGUloz3vpUZRSaasCexDgJZ/wSXsOSWDBE3nspjvgtqM4+1aRIhn/4SS8HR35vXouECbUa0SABJ5xlxrcUx0IfEkUQR5PKmPilL7FME/2JkwfnizCERp/BSRtTChidPENzMKEkx7bslE0LYTRreUE0Qjv9CyBn9ZAzV13o/jkOsown+afQ1eAtKRvfke14V3vm9EXZZjBMS4oKxInQEypbARSOdkVh7V3ctglo5X6g7LiWPKHMD2VAKzg11ZJ2iYs1GBdIisB3XAd7kR4VAm3+idQ8eHS6c+ErcSdz9ER/uAZWT8ub2OsZBC/h+M/j/wY5xXdx5P3MVgJprJilu66BR4iMVeoNrQ/7eSz9MiqJWkDwjCp+Tq1aGZCw2KB0qGFAUoFJHlc/nYiZLTnwaOc8ZmawuZ1tlVhRV9XVFelh3MNsmFTWNjUR+ZhBHrX0c9WvrvYqCLSk6h5JdJZoEwkJOThCDsa5SUHHIEoM460sZcAEIFOGlqiTC3OiR0UDBD2oWNQIjMKOC2gmoJGfTSzwxFj9sXs642smc03nmhTI8LZOgC++UMjMUQYNyxx1IWE8=
+  - secure: tNI7rDbLBHqPVroRnzcqVdQpyrW8oizYTO6RjHNKTqmz3jZGWfxYoJIR/7FXlVRhjUcI31S6ko+INxU9FNOJhjnwu5xPcm8Kbb510VoYeekGXKs56y5w3TnNlTrLVrp2MFA/olBnrep8+Z/CnOrcV6NiJ2eDSkqi7zYlzFa4ZbEUtk4+ArSQP/I6WnWmrZBwSsZAUq6b9XwzyxBMinrhW5lHSC+2OGeVT1NSLaMEBYJvItUmegdzvg8FxpgSw0BZqc6MICp/3mshhwANMDZDokkpP1SujALNDcQco2gTtjOHW97g+78iE2MhuY81kY+wLW50jJKPmYuoQgvDNTOaYLAF/pXLEExqNiocrbrBgmU6Iwa4m23GvCwsjJpsDOZzHp/kEW5UIN/oSG5VmZ7GDUVi/W3v3fFd9cR2R+Whkav3nuy6HLzNLX+w+JnN1WTDqg5HvCG2CD3+YPs3sDvfA4ydHivnD7Xy6dwpm7JiAmVS6AOgYk87dfZA1Q80h+ib9Pgs0f7T9QN+TGSEmEpSfKqETNtqbtOIuwSeIsNCL2NDrhpqqS4RJmrR5awqvJhgO9N0iqIe/9IdxpyY0ZbbtCqRbbqv96XVnRRia4cD4X4orL9h1cyd1qgFJTj2tkowQBzEs5njm9e+kWQRS51YyOxWc09cIca/zOGXaVK6AuM=
+sudo: false
