@@ -8,7 +8,7 @@ script:
     #- bundle exec htmlproofer ./_site
   - git config --global user.email "travis"
   - git config --global user.name "travis"
-  - git commit -a
+  - git commit -a -m "auto commit from travis build"
   - git push origin master
 
 branches:
