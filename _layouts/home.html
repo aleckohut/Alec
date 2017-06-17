@@ -10,7 +10,6 @@ layout: default
         <div class="row">
             <div class="col-xs-12 col-md-8">
                 {% for post in site.posts %}
-                <div class="post">
                     <div class="post-thumbnail col-xs-4 col-md-3">
                         <img src="{{ site.url }}{{ post.thumbnail }}" style="max-width:100%;max-height:100%;"/>
                     </div>
@@ -22,7 +21,6 @@ layout: default
                         </h2>
                         <div class="post-excerpt">{{ post.excerpt }}</div>
                     </div>
-                </div>
                 {% endfor %}
             </div><!--posts-->
             <div class="col-xs-12 col-md-4">
