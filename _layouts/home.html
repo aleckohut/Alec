@@ -41,7 +41,7 @@ layout: default
                 {% endfor %}
             </div><!--posts-->
             <div class="col-xs-12 col-md-4">
-                <h1>Targeted Districts</h1>
+                <h1 style="margin-top:0px">Targeted Districts</h1>
                 {% for post in site.posts %}
                     {% if post.categories contains 'targeted_district' %}
                         {% if post.thumbnail %}
@@ -102,6 +102,5 @@ layout: default
         </div>
     </div>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
