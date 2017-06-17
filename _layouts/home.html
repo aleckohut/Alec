@@ -23,6 +23,7 @@ layout: default
                             </h2>
                             <span class="post-meta">{{ post.date | date: date_format }}</span>
                             <div class="post-excerpt">{{ post.excerpt }}</div>
+                            <a href="{{ post.url | relative_url }}">read more...</a>
                         </div>
                         {% else %}
                         <div class="post-details col-xs-12 col-md-12">
@@ -32,6 +33,7 @@ layout: default
                             </h2>
                             <span class="post-meta">{{ post.date | date: date_format }}</span>
                             <div class="post-excerpt">{{ post.excerpt }}</div>
+                            <a href="{{ post.url | relative_url }}">read more...</a>
                         </div>
                         {% endif %}
                     </div>
@@ -53,6 +55,7 @@ layout: default
                             </h2>
                             <span class="post-meta">{{ post.date | date: date_format }}</span>
                             <div class="post-excerpt">{{ post.excerpt }}</div>
+                            <a href="{{ post.url | relative_url }}">read more...</a>
                         </div>
                         {% else %}
                         <div class="post-details col-xs-12 col-md-12">
@@ -62,6 +65,7 @@ layout: default
                             </h2>
                             <span class="post-meta">{{ post.date | date: date_format }}</span>
                             <div class="post-excerpt">{{ post.excerpt }}</div>
+                            <a href="{{ post.url | relative_url }}">read more...</a>
                         </div>
                         {% endif %}
                     {% endif %}
