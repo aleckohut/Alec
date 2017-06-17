@@ -11,6 +11,9 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
+        <div>
+          <img src="{{ site.url }}{{ post.thumbnail }}"/>
+        </div>
         {% assign date_format = "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
