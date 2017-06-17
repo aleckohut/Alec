@@ -66,5 +66,5 @@
 <use xlink:href="#state_outline"/>
 </clipPath>
 </defs>
-<use xlink:href="#state_outline" transform="translate(1615 46.592)" height="32467" width="74862" stroke="#C8ECFF" stroke-width="5" y="0" x="0" fill="#C8ECFF"/>
+<use xlink:href="#state_outline" transform="translate(1615 46.592)" height="32467" width="74862" stroke="#C8ECFF" stroke-width="5" y="0" x="0" fill="#D4F4FF"/>
 </svg>
