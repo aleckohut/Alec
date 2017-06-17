@@ -10,24 +10,22 @@ layout: default
         <div class="row">
             <div class="col-xs-12 col-md-8">
                 {% for post in site.posts %}
-                <div class="post">
-                    <div class="post-thumbnail">
-                        <img src="{{ site.url }}{{ post.thumbnail }}"/>
+                <div class="post col-xs-12 col-md-8">
+                    <div class="post-thumbnail col-xs-4 col-md-3">
+                        <img src="{{ site.url }}{{ post.thumbnail }}" style="max-width:100%;max-height:100%;"/>
                     </div>
-                    <div class="post-details">
+                    <div class="post-details col-xs-8 col-md-5">
                         {% assign date_format = "%b %-d, %Y" %}
                         <span class="post-meta">{{ post.date | date: date_format }}</span>
-
                         <h2>
                             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                         </h2>
-
                         <div class="post-excerpt">{{ post.excerpt }}</div>
                     </div>
                 </div>
                 {% endfor %}
             </div><!--posts-->
-            <div class="col-xs-6 col-md-4">
+            <div class="col-xs-12 col-md-4">
                 {% for post in site.posts %}
                 <div class="post">
                     <div class="post-thumbnail">
