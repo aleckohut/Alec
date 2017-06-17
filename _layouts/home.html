@@ -4,27 +4,51 @@ layout: default
 
 <div class="home">
 
-  {{ content }}
+    {{ content }}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <div>
-          <img src="{{ site.url }}{{ post.thumbnail }}"/>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                {% for post in site.posts %}
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <img src="{{ site.url }}{{ post.thumbnail }}"/>
+                    </div>
+                    <div class="post-details">
+                        {% assign date_format = "%b %-d, %Y" %}
+                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+                        <h2>
+                            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                        </h2>
+
+                        <div class="post-excerpt">{{ post.excerpt }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div><!--posts-->
+            <div class="col-xs-6 col-md-4">
+                {% for post in site.posts %}
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <img src="{{ site.url }}{{ post.thumbnail }}"/>
+                    </div>
+                    <div class="post-details">
+                        {% assign date_format = "%b %-d, %Y" %}
+                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+                        <h2>
+                            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                        </h2>
+
+                        <div class="post-excerpt">{{ post.excerpt }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div><!--posts-->
         </div>
-        {% assign date_format = "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-
-        <div class="excerpt">{{ post.excerpt }}</div>
-
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
