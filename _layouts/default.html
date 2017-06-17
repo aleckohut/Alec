@@ -10,7 +10,11 @@
     background-color: #05567F;
     border-color: #05567F;
 }
-.navbar-brand, .navbar-brand:active, .navbar-brand:link, .navbar-brand:visited {
+.navbar-brand, .navbar-brand:active, .navbar-brand:link, .navbar-brand:visited, .navbar-brand:hover {
+    color: #C8ECFF;
+    font-size: 48px;
+}
+.navbar-logo, .navbar-logo:active, .navbar-logo:link, .navbar-logo:visited, .navbar-logo:hover {
     color: #C8ECFF;
 }
     </style>
@@ -40,7 +44,7 @@
                 {% endif %}
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <a href="#" class="navbar-right"><img src=" {{ site.url }}/assets/virginia.svg" style="height:70px;margin:5px;"></a>
+                <a href="#" class="navbar-right navbar-logo"><img src=" {{ site.url }}/assets/virginia.svg" style="height:70px;margin:5px;"></a>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
