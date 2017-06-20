@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Test post..."
-date:   2017-06-02 19:15:58 -0400
-thumbnail: "/assets/Ancient Aliens.jpg"
----
-Test edit...
-
