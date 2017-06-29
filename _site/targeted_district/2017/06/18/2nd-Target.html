@@ -67,6 +67,7 @@
         .post-details {
             padding-left:2px;
             padding-right:2px;
+            font-size:36px;
         }
 
         .post-header span {
@@ -97,6 +98,7 @@
 }
 
 
+
         @media (min-width: 768px) {
             .navbar-upper .navbar-nav li a.navbar-brand {
                 padding-left: 0px;
@@ -115,7 +117,9 @@
             .navbar-upper .container {
                 width: 100%;
             }
-
+            .post-details {
+                font-size:14px;
+            }
         }
 
 
@@ -138,6 +142,49 @@
             .left-border {
                border-left:10px solid #003D7F;
                padding-left: 25px;
+            }
+        }
+
+        @media (max-device-width: 480px) {
+            .navbar-upper .navbar-nav li a.navbar-brand {
+                padding-left: 0px;
+            }
+            .navbar-upper .navbar-nav li a.navbar-brand {
+                padding-left: 0px;
+            }
+            .navbar-logo img {
+                height:100px;
+                margin:5px;
+                padding-right:0px;
+            }
+            .navbar-upper {
+                display: block;
+            }
+            .navbar-upper .container {
+                width: 100%;
+            }
+            .post-details {
+                font-size:36px;
+            }
+            h2.post-header {
+                font-size:40px;
+            }
+            h3.post-header {
+                font-size:38px;
+            }
+            .post-header span {
+               font-size:24px;
+               line-height:38px;
+               vertical-align: middle;
+               font-weight: normal;
+            }
+            .container {
+               width:95%;
+            }
+            .navbar-inverse .navbar-nav>li>a {
+                font-size: 34px;
+                font-weight: bold;
+                line-height: 38px;
             }
         }
 
