@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>2nd District - The Yo-Yo District - Turnout Blue - Virginia</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
         a, a:active, a:focus, a:visited, a:hover {
@@ -84,7 +84,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/" class="navbar-logo"><img src=" {{ site.url }}/assets/virginia.svg"
+                    <a href="/" class="navbar-logo"><img src=" http://localhost:4000/assets/virginia.svg"
                                                          style="height:70px;margin:5px;padding-right:90px;"></a>
                 </li>
             </ul>
@@ -105,18 +105,31 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                {% assign default_paths = site.pages | map: "path" %}
-                {% assign page_paths = site.header_pages | default: default_paths %}
-                {% if page_paths %}
-                {% for path in page_paths %}
-                {% assign my_page = site.pages | where: "path", path | first %}
-                {% unless my_page.title == "Index" or my_page.url contains "assets" %}
+                
+                
+                
+                
+                
+                
                 <li>
-                    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                    <a class="page-link" href="/contact-us/">Contact Us</a>
                 </li>
-                {% endunless %}
-                {% endfor %}
-                {% endif %}
+                
+                
+                
+                
+                
+                
+                
+                <li>
+                    <a class="page-link" href="/overview/">Overview</a>
+                </li>
+                
+                
+                
+                
+                
+                
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -125,7 +138,48 @@
 
 <div class="container">
     <div class="content">
-        {{ content }}
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">2nd District - The Yo-Yo District</h1>
+    <p class="post-meta">
+      <time datetime="2017-06-18T00:00:00-04:00" itemprop="datePublished">
+        
+        Jun 18, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>#1 -Turnout Blue - Virginia Flipable Seat
+<!--more-->
+2nd House District -The Yo-Yo District</p>
+
+<p>This was a new district, created in 2011 with parts of the old 28th, 52nd, and 88th districts.</p>
+
+<p>Since then, it has switch parties, or yo-yo’d back and forth in every House of Delgates election.</p>
+
+<p>We won this seat in 2013, by beating incumbent Mark Dudenhefer, who won the seat back in 2015, when Dudenfefer won by only 125 votes, despite outspending Democrat Josh King $452,000 to $181,000.</p>
+
+<p>In what could be considered an upset, Jennifer Carroll Foy beat 2015 nominee Josh King.</p>
+
+<p><img src="http://localhost:4000/assets/2nd distict pic.jpg" alt="2nd District" /></p>
+
+<p>Trump underperformed in the 2nd vs. Romney, gaining only 39% of the vote. We cannot believe Trump will any more popular in November.</p>
+
+<p>Not only should we win this one, but make it a safe Blue district.</p>
+
+<p>Turnout Blue has identified six Target Precincts, where Democrats gain over 80% of the vote of occasional voters. There are approximately 3,200 occasional voters in those six precincts.</p>
+
+
+  </div>
+
+  
+    
+
+  
+</article>
+
     </div>
 </div>
 <!-- /.container -->
