@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Contact Us
-permalink: /contact-us/
-order: 2
+title: Volunteer
+permalink: /volunteer/
+order: 4
 ---
 For more information, e-mail us at Turnoutblue@gmail.com, or call or text, 703-623-0886.
 
