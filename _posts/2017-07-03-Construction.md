@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "Virginia...We Have a Problem"
-thumbnail: "/assets/Red VA.jpg"
+title:  WEBSITE UNDER CONSTRUCTION
 date:   2017-07-3
 ---
 
